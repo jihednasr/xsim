@@ -1,0 +1,55 @@
+In order to evaluate the behavior of the system, some measures are taken.
+They are divided in two categories: the global measures and the specialized 
+measures. 
+\begin{itemize}
+    \item The global measure is useful to characterized the time performance of 
+    the simulation or the listener. Time function provided by \verb|<time.h>| as
+    \verb|clock_gettime| are used.
+    \item The specialized measures measure some short part of the code as the 
+    lock. The instruction \verb|RDTSC| and \verb|RDTSCP| are used in order to
+    have bus cycle accuracy.
+\end{itemize}
+
+For the experimences, we used ... (décrire l'ordinateur hôte et le test que l'on fait tourner dessus).
+
+We focus now on the global behavior of the system. First, the graphic~\ref{global_proc}
+shows the evolution of the execution time when the number of processors running goes from 1 to X. 
+We expected ...
+
+We observe ...
+
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.7\columnwidth]{../gnuplot/pdf_gnuplot/gnuplot_test_global_processus_time.pdf}
+	\caption{Processes execution time}
+	\label{global_proc}
+\end{center}
+\end{figure}
+
+
+The speed-up of the system is showned in graphic~\ref{speed_up_global}.
+We expected ...
+
+We observe ...
+
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.7\columnwidth]{../gnuplot/pdf_gnuplot/gnuplot_test_speedup_global_processus_time.pdf}
+	\caption{Speed-up}
+	\label{speed_up_global}
+\end{center}
+\end{figure}
+
+This can be explain by concurrency limit because some locks are used ... graph~\ref{lock_wait}.
+
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.7\columnwidth]{../gnuplot/pdf_gnuplot/gnuplot_test_lock_wait.pdf}
+	\caption{Evolution of the time spend waiting a lock}
+	\label{lock_wait}
+\end{center}
+\end{figure}
+

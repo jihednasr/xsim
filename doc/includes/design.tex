@@ -1,0 +1,571 @@
+A Chip Multi-Processors (CMP) is composed of multiple resources and networks.
+A resource can be a processor core, a DSP, an FPGA block, a memory bock, 
+an other Intellectual Properties (IP), or a mixed of all that. Each resource 
+has the size of a synchronous domain.
+The resources are connected to a network via a \emph{Network interface 
+component} (NIC). A NIC can be connected to only one network but a CMP can have 
+multiple networks. So each resource has as
+many NIC as there are networks to be connected with. Figure~\ref{CMP_schema} 
+represents a basic CMP with two 2D mesh network.
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.6\columnwidth]{schema/CMP_schema.pdf}
+	\caption{Chip Multi-Processors scheme}
+	\label{CMP_schema}
+\end{center}
+\end{figure}
+
+
+Xsim simulates the networks of a CMP. It abstracts the networks, the routers, 
+the FIFOs and gives an interface to the NIC in order they can send and receive
+messages. Figure~\ref{Xsim_conceptual_view} illustrates this description.
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=\columnwidth]{schema/Xsim_conceptual_view.pdf}
+	\caption{Conceptual view of Xsim}
+	\label{Xsim_conceptual_view}
+\end{center}
+\end{figure}
+
+
+In Xsim, an interface is used to represent the link between a NIC of a resource
+and a network. The network is internally represented by an interface identity
+number. The NIC can send and receive messages with corresponding function invocation.
+A \emph{node} represents one resource and its links to all the networks.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Internal structures}
+Xsim should simulate the networks. The latency in the communication between 
+the nodes is a part of it. Indeed
+a message can be sent from one node to another almost instantaneously for the 
+software (time of a \verb|memcpy| or time to give a pointer to the message), 
+but in reality there is delay for 
+communication between nodes. Xsim must simulate this delay. It is why
+Xsim is composed of multiple lists to store the messages before it can deliver
+the messages to the right NIC. 
+
+All the interfaces of
+a node shared the same list to store the messages to be sent but they have their
+own list for the received messages. Moreover there is a central list which 
+collects all the messages. The different nodes read it regularly in order to 
+see if there is messages for one of their interfaces. This list plays a little 
+the role of a central router.
+These internal structures are shown in figure~\ref{Xsim_internal_structures}.
+
+The central list is used to broadcast the information to all the node with no
+more cost as a simple sent and to simplify some race problems which can occur
+if the messages were directly posted by the sender in the reception list of
+the receiver. This broadcast property is useful for the time management which
+is presented later.
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=\columnwidth]{schema/Xsim_internal_structures.pdf}
+	\caption{Internal structures of Xsim}
+	\label{Xsim_internal_structures}
+\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Management of a message}
+
+We used what we call a \emph{listener} to manage the messages inside Xsim.
+There is one listener by node.
+
+A \verb|xsim_msg_send()| call done by a NIC stores the message in the sent list of the 
+corresponding node. After this message is copied by the listener of the node 
+in the central list where all the listener come read it. The listener of the 
+destination nodes copies it in the receive list of the appropriate interface. 
+The NIC of this interface can then read this message when it is the good time
+with \verb|xsim_msg_recv()|.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Properties of the internal structures}
+
+\label{internal_list}
+If we want to be accurate and add the simulation time management, we need 
+to guaranty this property for the internal structure:
+\begin{myproperty}[Main property]
+\label{based_property}
+The call to \verb|xsim_msg_recv()| always return messages with increasing arrival time
+(but not strictly increasing) when it returns a message and the interfaces never
+miss a message.
+\end{myproperty}
+
+To guaranty the property~\ref{based_property}, we need to define a partial order
+and introduce other properties.
+\begin{mydef}
+For a node $n$ and 2 messages sent by $n$, 
+$m^n_1$ and $m^n_2$, $m^n_2$ is strictly 
+greater than $m^n_1$ if and only if $m^n_2$ was sent by the node $n$ 
+after $m^n_1$.
+\end{mydef}
+We will write: $m^n_1\prec m^n_2$.
+It is possible to have several messages sent in the same time by the same node if it
+send them on different networks/interfaces. This messages are equal and there arrival
+order has no importance.
+
+\begin{myproperty}
+\label{property2}
+During a complete simulation, the set of all the messages posted are called $M$. 
+All the listeners read the messages of $E$ in the messages box in the increasing 
+order for the partial order. 
+\end{myproperty}
+
+\begin{myproperty}
+\label{property3}
+The reception queue is sorted
+in the increasing arrival time order and it is read in the increasing order.
+\end{myproperty}
+
+Property~\ref{property2} is necessary for property~\ref{based_property}.
+\begin{proof}
+We assume that this property does not hold, the current simulation time of the 
+node $k$ is $t$ and the interface $i$ of node $k$ is waiting the 
+node $n$ (interface $i$ has already received a message from all the others nodes 
+with an arrival time greater than $t+a$ from example, $a>0$).
+
+Because the property does not hold, it is possible that the listener of node $k$ 
+reads a message $m^n_2$ before $m^n_1$ with $m^n_1\prec m^n_2$, both send on the
+same interface.
+The listener puts $m^n_2$ on interface $i$ of node $k$. 
+We assume that the arrival time of $m^n_2$ is $t+b$ with $0<b<a$.
+
+So the reception part of the interface $i$ of node $k$ can jump to $t+a$ because the interface
+believes that it can not receive a message before $t+a$. But $m^n_1\prec m^n_2$, 
+so the arrival time of $m^n_2$ is greater than $m^n_1$.
+So $m^n_1$ is missed.
+Moreover, if at this moment a 
+call to \verb|xsim_msg_recv()| on interface $i$ of node $k$ is done, $m^n_2$ is
+return.
+
+So this property is necessary.
+\end{proof}
+
+Property~\ref{property2} and~\ref{property3} implies property~\ref{based_property}.
+\begin{proof}
+Because all the messages of $M$ are read in the increasing order for the partial order,
+they arrive in the reception queue of the interfaces in the right order. And because
+of property~\ref{property3}, the messages are delivered in the right order and no 
+messages are missed.
+\end{proof}
+
+To ensure property~\ref{property2}, it is chosen to have a sorted list in the partial order for the
+messages box. But in this case it is also necessary to ensure the next property:
+\begin{myproperty}
+The messages are put in the central list in the partial order.
+\end{myproperty}
+\begin{proof}
+If the list is sorted in the partial order and the messages are not put in the
+partial order, it is possible to receive $m^n_2$ before $m^n_1$ in the list
+with $m^n_1\prec m^n_2$. So if a listener comes read the
+messages box before $m^n_1$ is put in the list, it reads $m^n_2$ but not $m^n_1$.
+Property~\ref{property2} is not guarantied.
+\end{proof}
+
+We chose to use a FIFO for the messages box and for the send list of each node.
+\begin{proof}
+It is guarantied that the message was put in the send list in the partial order by definition.
+(The moment the message is put in the send list must correspond to the send time.)
+Then, the messages was taken in this list in the partial order and put in the messages box in
+the partial order because this list is sorted in the partial order (FIFO) - so sorted in the send time order
+because this list contain messages from only one node. Finally, the messages box is
+sorted in the partial order (because FIFO) and so the listener reads the messages in
+the partial order. So because of property~\ref{property2} and property~\ref{property3}, property~\ref{based_property}
+is guarantied.
+\end{proof}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Messages box}
+
+The messages box is a FIFO list with a head and a tail. The insertion is done in tail.
+A cell can be deleted only if all the listeners have read it. The suppression is defined later
+and multiple cells can be deleted in one shot.\\
+
+The cell is composed of a data field, a mark field and a next field. 
+A listener puts its mark in the mark field iff it has read this cell and is jump to the 
+next cell.
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.6\columnwidth]{schema/List_type.pdf}
+	\caption{Scheme type of the list}
+	\label{List_type}
+\end{center}
+\end{figure}
+
+\subsection{Concurrent reading of the list by the listener}
+The listener access to the list with a cell pointer \verb|current| which indicates
+the last cell read by the listener. It reads the list in the list order, one cell
+after another. When a listener wants to read the list, it begins
+to do some special work for the deletion, which will be explained later. For the moment
+the only thing we need to know is that this special work move \verb|current| one cell
+forward.
+The listener reads the cell, jumps to the next cell and marks the last, reads 
+the current cell, ...
+If the next cell is the tail, the listener does not jump and does not mark the 
+current cell and stops to run through the list. 
+
+Without the deletion at the beginning and the marking, the listeners are only reading.
+In the loop, there is only the marking problem, so an atomic marking guaranties no 
+concurrency problem in the reading of the list. 
+The reading of a list by a listener can be resumed by this pseudo-code:
+\begin{verbatim}
+listener_read_list(xsim_msg_list_elt_t *current, xsim_msg_list_t *list)
+{
+    if (current->next != list->tail) {
+        special_delete_work(current, list);
+        read_msg(current);
+        while(current->next != tail) {
+            tmp = current;
+            current = current->next;
+            atomic_mark(tmp->mark);
+            read_msg(current);
+        }
+    }
+}
+\end{verbatim}
+The list must always contains at least a cell in addition to the head and the tail 
+because the \verb|current| pointer of the listeners needs to point to a valid cell 
+(not the head or the tail).
+
+
+
+\subsection{Insertion}
+The insertion needs two or more CAS and is done in tail.
+It is based on the MS FIFO.
+\begin{verbatim}
+insertion(xsim_msg_list_elt_t *new_msg, xsim_msg_list_t *list)
+{
+    new_msg->next = list->tail;
+    while (1) {
+        last = list->tail->next;
+        if (CAS(last->next, tail, new_msg)) {
+            break;
+        } else {
+            CAS(list->tail->next, last, last->next);
+        }
+    }
+        
+    CAS(list->tail->next, last, new_msg);
+}
+\end{verbatim}
+
+The first CAS ensures that no new cell can be added in the list if the tail pointer is
+not up-to-date and that only one cell at a time can be added. 
+The second and third CAS up-dates the tail pointer. In this way, the update of the
+tail pointer does not depend of only one process.
+Every process can up-date the tail pointer and so succeed the insertion in the next loop.
+So several insertions can be try concurrently without problem and the insertion is lock-free.\\
+
+The CAS is an atomic assembly instruction and is defined as:
+\begin{verbatim}
+CAS(value, old, new)
+{
+    if (value == old) {
+        value = new;
+        return true;
+    } else {
+        return false;
+    }
+}
+\end{verbatim}
+
+
+There is no problem with the concurrent reading of the list by the listeners 
+because the reading listeners do not care of the tail's next field. 
+%If a reading listener is not at the end of the list, the insertion can not be a problem. 
+%If the listener is on the last cell before the tail, there is two possibility:
+%\begin{itemize}
+%	\item the reading listener does the comparison of the \verb|while| before the CAS of the 
+%    insertion, so it jump out of the loop. No problem.
+%	\item if the cell is added before the listener does the comparison for the \verb|while|,
+%	so it executes the loop again and stop the next comparison if no other cell is added.
+%\end{itemize}
+
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.6\columnwidth]{schema/List_insertion.pdf}
+	\caption{Insertion of two cell in the same time - one has succeeded the CAS, the other not}
+	\label{List_insertion}
+\end{center}
+\end{figure}
+
+
+\subsection{Deletion}
+The deletion can be done in only two case. When the listener begins to read a list,
+it checks if all the others listeners have already read all the previous cells and
+jumped to the next cells. For that it checks if it is 
+the last to put its mark in the mark field of its current cell. If it is the case,
+it deletes all the previous cell (its current cell included) and jumps to the next
+cell, else it jumps immediately to the next cell and the delete job will be done 
+by an other listener which is currently on a previous cell (its current cell included).
+This is the most current case.
+
+The other case for the deletion is a security. There is some special case
+where deletion as presented above never arrives. A deletion can be try in the removal 
+function of the garbage list (cf \ref{garbage list} for more information).
+
+
+When a cell is deleted, it is put in an other list which is called a garbage list.
+This list is a pool of cells where we can pick one when a listener needs to add a 
+new cell in the message box. The addition of cells
+can be done in block: the function needs only a pointer to the first cell and a
+pointer to the last cell. (For more detail, see ~\ref{garbage list}.)
+
+\begin{verbatim}
+special_delete_work(xsim_msg_list_elt_t *current, xsim_msg_list_t *list)
+{
+    tmp       = current;
+    current   = current->next;
+    try_again = true;
+    do {
+        old_mark = tmp->mark;
+        if (old_mark == its_mark) {
+            /* 
+             * All the other listener are already on the next cells.
+             * We can delete this cell and the previous cells.
+             */
+            do {
+                begin = list->head->next;
+            } while (CAS(list->head->next, begin, current));
+            garbage_list_add(begin, tmp);
+            try_again = false;
+        } else {
+            new_mark = mark(old_mark);
+            try_again = !CAS(old_mark, tmp->mark, new_mark);
+        }
+    } while (try_again);
+}
+\end{verbatim}
+
+A pre-condition to the call to this function is that the next cell of \verb|current|
+is not the tail.
+We will now proof that this algorithm for the deletion works (no concurrency problem).
+\begin{proof}
+We take a listener of a node $n$. We will call it $L$. $L$ is currently on the cell $C$.
+All the listener $All$ can be divided in 3 sets: 
+\begin{itemize}
+    \item $Prev$ - the \verb|current| pointer of all these listeners pointed on a cell
+    which is before $C$ in the list.
+    \item $Same$ - the \verb|current| pointer of all these listeners pointed on $C$ 
+    in the list.
+    \item $Next$ - the \verb|current| pointer of all these listeners pointed on a cell
+    which is after $C$ in the list.
+\end{itemize}
+
+There are 2 different cases:
+\begin{itemize}
+    \item If the mark of $C$ is equal to the mark of $L$, it means
+    that it stays only its mark to remove. It is equivalent to say that the other listeners
+    marked already $C$. So $Same = L$, $Prev = \emptyset$ and $Next = All\setminus L$. 
+    It is not possible that a listener is working on a previous cell, so we can
+    remove all the cells before $C$ ($C$ included). Moreover if an other listener 
+    is removing cells in the same time because the garbage list needs cells 
+    (cf \ref{garbage list}), they will not remove the same cells because of the 
+    CAS on the head of the list and \verb|tmp| cell is not marked by $L$.
+    
+    \item If $C$'s mark is different of $L$'s mark, it means there is other 
+    listeners which have not jump to the successor cell of $C$. 
+    So $Same \neq \{L\}$ or $Prev \neq \emptyset$.
+    In the both case, $L$ tries to mark $C$ with a CAS. 
+    
+    If it succeeds, no other
+    listener has marked $C$ during the time $L$ was trying to do it. It means
+    the situation is staying the same: $Same \neq \{L\}$ or $Prev \neq \emptyset$.
+    So $L$ goes read the next cell and does not delete cells.
+
+    If the CAS failed, it means that an other listener marked $C$ during the
+    time $L$ was trying to do it. The situation has maybe changed. 
+    $L$ must do again the comparison to see if $Next = All\setminus L$ or not.
+
+\end{itemize}
+\end{proof}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Condition for deletion}
+\label{deletion_not_always_possible}
+
+First, we can sort the listener: $L_1 \prec L_2$ if the \verb|current| pointer of $L_1$
+is pointing to a cell which is before the cell pointed by the \verb|current|
+pointer of $L_2$. $L_1 = L_2$ if their \verb|current| pointer is pointing to the same cell.
+
+We proof now that:
+\begin{myproperty}
+If there is a set of listener so that:\\
+all the listeners of this set are equal, smaller to all the other listeners which are not in the set
+and all not currently reading the message box.
+Then all the cells before or equal to the cell pointed by this set will be deleted.
+\end{myproperty}
+\begin{proof}
+
+The deletion can be done when a listener is beginning to read a list.
+There is 2 cases:
+\begin{itemize}
+    \item The set is composed only of one listener. This listener is already smaller 
+    than all the other and is not performing the reading.
+    When it begins the reading, it will perform the deletion.
+
+    \item The set has several listener.
+    The listeners will begin to read one after the other. And at some point,
+    it will remain only one listener on this cell because the listener can
+    mark the cell only one at a time. This listener will perform the deletion.
+\end{itemize}
+\end{proof}
+
+But it exists some special case where the conditions for the deletion are never met.
+One example is given in figures~\ref{sp1},~\ref{sp2},~\ref{sp3},~\ref{sp4},~\ref{sp4}.
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.5\columnwidth]{schema/special_case1.pdf}
+	\caption{Initial state: 3 listeners (1 is reading, the 2 other not)}
+    \label{sp1}
+
+    \includegraphics[width=0.6\columnwidth]{schema/special_case2.pdf}
+	\caption{2 cells are added by a listener which are not reading}
+    \label{sp2}
+
+    \includegraphics[width=0.6\columnwidth]{schema/special_case3.pdf}
+	\caption{Listeners 1 and 2 are trying to perform the deletion but can not because listener 3 is on the same cell}
+    \label{sp3}
+
+    \includegraphics[width=0.6\columnwidth]{schema/special_case4.pdf}
+	\caption{Listeners 1 and 2 advance}
+    \label{sp4}
+
+    \includegraphics[width=0.6\columnwidth]{schema/special_case5.pdf}
+	\caption{Listener 3 advances, and listeners 2 and 3 stops reading. Same situation as the initial state.}
+    \label{sp5}
+
+\end{center}
+\end{figure}
+
+These cases should be normally rather rare,
+but if it appends perpetually, there is no deletion.
+It is why a special test and a possible deletion is added in the garbage list removal in order to
+avoid problem due to the lack of cells deletion.
+
+
+\subsection{Garbage list}
+\label{garbage list}
+
+We give 2 primitives to manipulate the garbage list:~\verb|garbage_list_add()|
+and~\verb|garbage_list_remove()| which allow to add cells and to remove a cell
+respectively. The addition of new cells is done in tail and the removal is done
+in head.
+
+\begin{verbatim}
+garbage_list_add(xsim_msg_list_elt_t *begin, xsim_msg_list_elt_t *end)
+{
+    end->next = garbage_list->tail;
+    while (1) {
+        last = garbage_list->tail->next;
+        if (CAS(last->next, garbage_list->tail, begin)) {
+            break;
+        } else {
+            CAS(garbage_list->tail->next, last, last->next);
+        }
+    }
+    CAS(garbage_list->tail->next, last, begin);
+}
+\end{verbatim}
+
+\begin{verbatim}
+xsim_msg_list_elt_t garbage_list_remove()
+{
+    do {
+        remove_cell = garbage_list->head->next;
+        if (garbage_list->head->next->next == garbage_list->tail) {
+            collect_cells();
+            if (garbage_list->head->next->next == garbage_list->tail)
+                return NULL;
+        }
+    } while (!CAS(garbage_list->head->next, remove_cell, remove_cell->next));
+    remove_cell->next = NULL;
+    return remove_cell;
+}
+\end{verbatim}
+
+
+
+We assume that: 
+\begin{myproperty}
+\label{garbage_list}
+The garbage list has always at least one element without the head 
+and the tail. 
+\end{myproperty}
+This property guaranties there is no interaction betwen the addition and the removal.
+This property is checked before each removal.\\
+
+For the add, the reasons why it works are the same as for the insertion in the message box.
+
+The removal of one cell uses one CAS to ensure the absence of race problem. If the first
+cell of the garbage list is removed during an other listener tries also to have a new
+cell, the second CAS will fail and the second listener should try again to remove the 
+new first cell.
+
+%If a listener is removing one cell and an other listener is adding cells, it could be a 
+%problem only in one case: the garbage list contains only one valid cell. If there is more
+%cells, there is no interaction between cells removal and addition. But in reality, there is
+%no race problem because of property~\ref{garbage_list}.
+%There are two case:
+%\begin{itemize}
+%    \item the removal begins before the addition of cells, so the removal fails because
+%    the list has only one valid cell. No race problem.
+%    \item the addition begins before the removal. The second instruction must be already
+%    executed in order the removal can see more than one valid cell. The removal can 
+%    run normally. The last cell added can not be removed even if there is a lot of removal
+%    in the same time because of property~\ref{garbage_list}. So the cell 
+%    addition can be finished without problem.
+%\end{itemize}
+
+The goal of \verb|collect_cells()| is to collect the cells of the messages box which are 
+already read by all the listener but not already inserted in the garbage list because we are
+in a situation as describe in \ref{deletion_not_always_possible} and all the cells are used.
+This function can be called by several listener but only one can succeed.
+
+\begin{verbatim}
+collect_cells()
+{
+    begin = message_box->head->next; 
+    end = message_box->head;
+    while (all_the_listener_have_marked(end->next)) {
+        end = end->next;
+    }
+    if (end == message_box->head) {
+        /* no cells to collect */
+        return;
+    }
+    if (CAS(message_box->head->next, &begin, end->next)) {
+        /* collect some cells */
+        garbage_list_add(begin, end);
+        return;
+    } 
+    /* a listener has already collected some cells */
+    return;
+}
+
+\end{verbatim}
+
+The last cell of the message box can never be marked by all the listener, so
+\verb|end| can never go to the tail. The CAS fails only if an other listener 
+remove cells from the messages box.
+
+Moreover we can mark the mark field of the tail of the messages box and the garbage list 
+in order the listener are obliged to stop at the end of a list even if the cells
+are garbaged during the time it is traversing the message box.
+
+
+\subsection{ABA problem}

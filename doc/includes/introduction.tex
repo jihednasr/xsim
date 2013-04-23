@@ -1,0 +1,8 @@
+The goal of Xsim is to simulate the network of a SoC in order to allow the 
+simulation of each node of the SoC on a different host core. This should increase
+the parallelism of the simulation and so reduce its simulation time.
+
+Each node of the simulation can be simulated in SystemC (or an other system)
+and link to Xsim via its interface. Xsim simulates the network of the chip
+and so only send messages from one node to another with the good time constraints.
+

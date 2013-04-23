@@ -1,0 +1,2608 @@
+*********************************************
+**** experience with Window et time info freq
+*********************************************
+
+#define   time_window               100
+#define FREQ_TIME_INFO          100
+#define   time_window               1000
+#define FREQ_TIME_INFO          150
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 1/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 157855792
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1311801538
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 2/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1034213096
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249665087
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 3/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1016171610
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1243131494
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 4/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 153527788
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1260831726
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 5/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1074923292
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247746801
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 6/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1039648444
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248111033
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 7/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020780661
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252786757
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 8/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1021846843
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1255145378
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 9/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008417760
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253734024
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 10/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1015695117
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250518728
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 11/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006583563
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1243864131
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 12/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 160881269
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253896038
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 13/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008469434
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1260720339
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 14/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 146595898
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249536272
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 15/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1009255784
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245549872
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 16/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 157467591
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1265859940
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 17/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1079888837
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249289704
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 18/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1062181639
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1244471908
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 19/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1036386700
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248901242
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 20/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020380201
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250964938
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 21/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1012768073
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249140194
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 22/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1000831301
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251431844
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 23/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020111918
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249820061
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 24/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1002953917
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251636526
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 25/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1009690902
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250316385
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 26/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152205728
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246888618
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 27/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1009147193
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249146622
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 28/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 156968683
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250179109
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 29/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1016725713
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246376800
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 30/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152460254
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250594934
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 31/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 140397568
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245536782
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 32/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013264737
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245936113
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 33/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1000596067
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245912116
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 34/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013792451
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242601811
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 35/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 998662812
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247657721
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 36/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006389362
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253743793
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 37/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013178685
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249688379
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 38/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1002156007
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1244457755
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 39/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150834794
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249424743
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 40/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 146586573
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250571699
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 41/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008525880
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248249196
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 42/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1011888446
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252258556
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 43/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001024639
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248851148
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 44/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1004755906
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247648902
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 45/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010140301
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253385233
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 46/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 153184053
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248473732
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 47/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1002017258
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249443580
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 48/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017529173
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249401608
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 49/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 146270487
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247271690
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 50/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1012847219
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252160331
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 51/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 147521592
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249666467
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 52/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006028164
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247300514
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 53/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008245032
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248736783
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 54/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1015602755
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251851325
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 55/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 999328874
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1257192825
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 56/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 147486889
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1386485795
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 57/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152693032
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1241554783
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 58/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 151300217
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246477739
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 59/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149988434
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248052001
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 60/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152600981
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245764291
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 61/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150409082
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249547704
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 62/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 145317714
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251292752
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 63/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149918332
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253082918
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 64/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 154389949
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1240828105
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 65/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152657393
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251556745
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 66/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149501585
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251287465
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 67/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152209715
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247706849
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 68/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149683808
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249595774
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 69/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 153282639
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1244613398
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 70/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 171058572
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250553328
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 71/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 162477921
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253324470
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 72/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149076272
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250893898
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 73/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 156666610
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242540866
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 74/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 159408060
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1415219456
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 75/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 154441887
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1351736069
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 76/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 154944612
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248167886
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 77/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 156569557
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242303337
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 78/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 143272575
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248457377
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 79/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 148111696
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247459316
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 80/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149870085
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250174614
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 81/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007513852
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250709834
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 82/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1015489365
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249059246
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 83/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 998719443
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245556095
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 84/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 145529708
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248868582
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 85/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007817560
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253462250
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 86/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001083116
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1257520322
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 87/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1021307823
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246674930
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 88/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 148601535
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248200056
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 89/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013679876
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251117154
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 90/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 147652455
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247363829
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 91/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017874055
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242990554
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 92/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 151849597
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250611792
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 93/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 156242491
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247005080
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 94/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 998792677
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248243256
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 95/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017287323
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249994095
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 96/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 148073187
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1243379783
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 97/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149491988
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246802064
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 98/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001378277
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253599624
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 99/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1012486188
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251466201
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 100/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150349550
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247103477
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 101/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007759547
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248828530
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 102/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1005330175
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250100803
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 103/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007929271
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245269035
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 104/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 158332120
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249044465
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 105/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1000979674
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242953382
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 106/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001158627
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250728039
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 107/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013580065
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247840220
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 108/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 157733083
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246929284
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 109/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006377358
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249464471
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 110/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1005002946
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247163043
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 111/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 998632709
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247599209
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 112/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008251428
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247774320
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 113/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001786983
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242370069
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 114/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007626484
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1240944113
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 115/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 156863478
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252731118
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 116/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1014609069
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1243088721
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 117/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 155477662
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247056750
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 118/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1003188790
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247463143
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 119/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001290051
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252240736
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 120/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013802315
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249025468
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 121/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149060323
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248506162
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 122/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006284983
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251275543
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 123/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010652973
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249784762
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 124/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150532549
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1240415565
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 125/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 154762889
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247054931
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 126/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 999755095
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251581519
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 127/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020686809
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252266975
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 128/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1012871702
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247562234
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 129/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 146318525
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249758266
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 130/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017590065
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248120033
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 131/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150828265
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246394590
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 132/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 152209903
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1241830015
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 133/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 153284624
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1254950720
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 134/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017012814
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1243089402
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 135/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 160587514
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1254910624
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 136/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1009126109
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1254521404
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 137/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149891120
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249521841
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 138/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017345269
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1256948922
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 139/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013572842
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250524694
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 140/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1002256652
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247451575
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 141/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007847379
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251653582
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 142/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 999885338
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252828716
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 143/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1021831688
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246227081
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 144/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1009609057
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1255294274
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 145/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1018366264
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1254160443
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 146/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1013726206
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248678245
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 147/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 148597026
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249841097
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 148/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1002900289
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249075795
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 149/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1011080486
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1255082701
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 150/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1003312391
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250246820
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 151/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1004235100
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247398285
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 152/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 998851266
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248146199
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 153/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1015088030
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249790833
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 154/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 154763930
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248997524
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 155/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010979710
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251319124
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 156/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 154476283
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252862419
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 157/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1019765566
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249772591
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 158/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006755955
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242616327
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 159/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150707748
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253234281
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 160/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006132326
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249210666
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 161/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1019537405
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248464808
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 162/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1005244930
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246079823
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 163/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 999972627
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250831921
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 164/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1014542886
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251400028
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 165/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 147872821
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247756445
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 166/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010667611
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248323249
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 167/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1002949180
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1242770327
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 168/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 147338682
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251853534
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 169/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1000390980
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250885951
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 170/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020081030
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245083598
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 171/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008278836
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249915291
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 172/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1018248848
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251511913
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 173/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007882179
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249237110
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 174/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010504939
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251733678
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 175/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 150244816
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1254319504
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 176/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010937514
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249869423
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 177/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 148390954
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247071180
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 178/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 149353655
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248652169
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 179/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020391928
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252082266
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 180/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1007731154
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1253542000
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 181/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1028606458
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248161197
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 182/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1019658750
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1239598384
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 183/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 156294012
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1245857948
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 184/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1005693137
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1239120664
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 185/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1000633038
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248655322
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 186/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1017129493
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246585847
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 187/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1010461210
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1244726950
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 188/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 148723276
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248743245
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 189/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1006010339
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1249314975
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 190/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1008514929
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247723747
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 191/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 998729973
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1252617883
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 192/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020903869
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1254327885
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 193/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1015354648
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1251401579
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 194/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1001140172
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1255305077
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 195/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020189598
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1246008142
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 196/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1004018039
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1248625323
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 197/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1020851165
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247290705
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 198/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1011256369
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1247674530
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 199/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1004478198
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1250535721
+
+!!!!!!!!! 1000 time window ; 150 time information period ; 200/200 trial !!!!!!!!!
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+Got all my childs
+Xsim_result: 1015552131
+
+             SystemC 2.2.0 --- Aug  2 2012 17:21:51
+        Copyright (c) 1996-2006 by all Contributors
+                    ALL RIGHTS RESERVED
+SysC_result: 1255408139

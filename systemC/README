@@ -1,0 +1,30 @@
+Time measures information:
+==========================
+
+* need only some specific area:
+    - specific_benchmark
+	- msg_src_sh_benchmark
+	- msg_sh_src_benchmark
+	- copy_src_sh_benchmark
+	- copy_sh_src_benchmark
+
+	- listener_recv_queue_lock
+	- listener_recv_queue_lock_wait
+	- listener_msg_box_cond_lock
+	- listener_msg_box_cond_lock_wait
+
+	- node_recv_queue_lock
+	- node_recv_queue_lock_wait
+	- node_msg_box_cond_lock
+	- node_msg_box_cond_lock_wait
+
+* need only some global measure:
+	- global_benchmark
+
+	- global_processus_time
+	- global_simulation_time
+	- global_listener_time
+
+
+
+

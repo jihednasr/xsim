@@ -1,0 +1,249 @@
+Each node can simulate faster or slower depending of what they have to
+simulate. This can create causality error when a node which goes faster
+receive a message in its past. In Xsim, the simulation time management
+is added in order to avoid the causality error. For that, each node
+must have a knowledge of the simulation time of the others nodes and
+check if it can go further in its simulation without risk.
+
+A pessimist method based on the blocking table and null messages to 
+avoid deadlock was chosen.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{How it works}
+
+We will adopt the point of view of a node. The node has to know how far the
+other nodes are in their simulation and if they send messages to it.
+But there may be multiple interfaces and on each interfaces, they could be
+communication. So we need to maintain a table per interface of a node.
+Each table contains what the interface n$^{\circ}i$ of a node knows
+about the next time the interfaces n$^{\circ}i$ of the others nodes 
+can send a new message. There is 2 possibilities for this time:
+\begin{itemize}
+    \item a node is sending a message on the interface n$^{\circ}i$ up to
+    the simulation time $t_{end\_send}$, so it can not send a new message before
+    $t_{end\_send}$.
+    \item a node is not sending a message on interface n$^{\circ}i$, so 
+    the next new message can be sent immediately. The next time the node can 
+    send a message on this interface is its current simulation time.
+\end{itemize}
+
+
+We have to answer to 3 questions: 
+how the message are managed with the simulation time,
+when can a node advance its simulation time without risk and
+how can we maintains the time tables?
+
+
+\subsection{How are the messages managed with the simulation time?}
+
+We will first define the send time and the arrival time.
+The send time of a message corresponds to the simulation time when the 
+first flit of the message is sent in the network. 
+The arrival time correspond to the simulation time when the first flit
+of the message is received by the addressee NIC.\\
+
+A NIC can not receive
+several messages in the same time. So if the first flit of a message arrives 
+at simulation time $t$ and this message is $n$ flits long, the NIC knows that 
+it can not receive an other message before $t+n$. 
+It is the same in other sens: when the NIC send a message of size $n$ flits at time $t$,
+it knows that it can not send an other message before $t+n$.
+But a NIC can send a message and receive an other message in the same time. So 
+we have to take care of both (reception and emission) independently.
+
+A goal of Xsim is to simulate correctly the message passing in order to avoid
+message overlapping. The policy for that is that messages are received in the order
+of their \emph{due time}. The \emph{due time} is the arrival time of the message
+if there is no other communication in the network during the time the message is
+exchanged. So \verb|due_time = send_time + travel_time_from_the_sender_to_the_addresse|.
+If 2 messages are overlapping, the arrival time of the message with the greater 
+due time is shifted latter. 
+
+There is no guaranty about the reception order of messages with the same 
+due time and the same receiver on the same interface.\\
+
+Moreover, as it is said before, a NIC of a node which send a message of size $n$ at 
+time $t$ can not send an other message on its interface before $n+t$.
+And a NIC of a node which receives a message of size $n$ at time
+$t$ can not receive an other message from its interface before time $n+t$.
+
+
+\subsection{When can a node advance its simulation time without risk?}
+The node can advance its time when it knows that:
+\begin{itemize}
+	\item it can receive a message only in its future on all its NICs
+    \item and it has nothing more to do in its current simulation time.
+\end{itemize}
+In this case, the node can jump to the minimum time between:
+\begin{itemize}
+    \item next time it can (possibly or certainly) receive a message from the network
+    \item next time it has a message to send 
+    \item next time it has a component to simulate.
+\end{itemize}
+
+We will now explain the two first cases:
+\begin{itemize}
+    \item Xsim is built in such a way that the messages go as fast as possible from the 
+    send queue of the sender interface to the receive queue of the receiver interface.
+    In the receive queue, they are stored until the node arrives to the right simulation
+    time to really receive the messages. So it is possible that a message which should
+    be delivered at time $t_{delivered}$ is in the receive queue at time $t_{sim}$ with
+    $t_{sim} < t_{delivered}$.
+
+    So the minimum time of all the time tables of a node (+ the travel time) gives the
+    next \emph{possible} message receive time. But if there is already a message in 
+    one of the receive queue of the node, the message has the smallest arrival time
+    among all the messages already in the receive queues of the node and the arrival 
+    time of this message is fewer than the \emph{possible} next message receive time, 
+    in this case we have the next \emph{certain} message receive time.
+
+    The third possibility is that an interface can not receive a message before $t$.
+    So in all the case, the next receive time must be greater or equal to $t$.
+
+    The formula used is:
+\begin{verbatim}
+for all the interface i, take the minimum of:
+    MAX(
+       -Next time interface i can receive a message,
+       -MIN(
+           -next possible message receive time on interface i,
+           -next certain  message receive time on interface i if it exists
+           )
+       )
+\end{verbatim}
+
+    \item If a NIC has messages to send, it must wait the last message is completely
+    send before it can send a new message. If it has no message to send, this value
+    is ignored or $+\infty$.
+
+\end{itemize}
+
+
+There is no risk because we jump to the next time it is possible that it arrives 
+something or we do something. 
+Nevertheless there is one case which could seem not safe: 
+the next time the node could receive a message is $t_{pr}$,
+the next time an interface $i$ is certain to deliver a message $m$ is $t_r$,
+$t_r>t_{pr}$ and we jump to $t_r$ because all the other interfaces of
+the node can not receive a message before a time greater than $t_r$.
+There is a simulation time between $t_{pr}$ and $t_r$ which seems risky
+as shown in figure~\ref{risky}.
+
+\begin{figure}[h]
+\begin{center}
+    \includegraphics[width=0.4\columnwidth]{schema/Risky.pdf}
+	\caption{Risky time interval}
+	\label{risky}
+\end{center}
+\end{figure}
+
+We can receive a message $m'$ with a due time smaller than the due time of $m$
+between $t_{pr}$ and $t_r$. $m'$ must be delivered before $m$ with regard to
+the deliver order given earlier.
+So we avoid the interface to deliver a message if the next possible message 
+receive time is smaller than the current simulation time.
+
+
+\subsection{How we maintain the time table?}
+First we need to know the time a message takes from one point to an other point
+in the network. We will call it \verb|travel_time(i, j)| to indicate the time
+a message takes from node $i$ to node $j$.\\
+
+We can update the time table of an interface when a message from an interface 
+(with network identifier $id$ and belonging to the node $n$) send a message. 
+Indeed, when a message is posted, all the listeners read it and so this message
+informs the nodes about where is the sender node in its simulation. \\
+
+There are 2 different kind of update.
+The first update concerns the listener with the same network number.
+The $listener$ of our node $k$ reads this message and indicates to its interface 
+corresponding to $id$ to update its time table. For that this computation is made:
+\begin{verbatim}
+time_table_of_id[n] = msg->send_time + (msg->nb_flit);
+\end{verbatim}
+This computation reflects the fact that the node $n$ can not send an other 
+message on the interface number $id$ before it terminates the sending of 
+the current message.
+
+Normally the message should be read in time increasing order compare to the sender
+node (cf \ref{internal_list} for more detail about the message order). 
+This guaranties the fact that the value of the time table can only increase.\\
+
+The second update concerns the time tables of the other interfaces of node $k$. The computation is
+in this case:
+\begin{verbatim}
+time_table[n] = MAX(time_table[n], msg->send_time);
+\end{verbatim}
+Indeed it could be that the node $n$ has update its time since the last time it
+sent a message on the other interface. \verb|msg->send_time| correspond to the time
+the node $n$ sent this message but also to the simulation time of node $n$ when it
+send this message. 
+A node can not send a message in its past, so we are sure that the next possible
+message send on any interface is at least at time \verb|msg->send_time|.
+And we take the \verb|max| because it could be that the interface has more
+accurate information coming from an other message.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Politic for the time propagation information}
+
+Two politics for the propagation of the simulation time information are implemented.
+The first is a systematic propagation of the time information, 
+the second is a propagation based on demand-driven time information.
+
+For that a field \verb|type| is added to the message in order to indicate what is
+the purpose of the message. The message can be:
+\begin{itemize}
+    \item a null message: the goal of this message is only to propagate the time information
+    to all the nodes.
+    \item a time request: Ask the other nodes to send a null message because
+    the sender node is blocked and needs their time information to progress.
+    \item end of simulation: inform the other nodes that the sender node is not more
+    connected to this network and so will never send a message in the future in this
+    network. This append when a node is not connected to a network or when it finishes
+    its simulation and so is disconnected from all networks.
+    \item a message with payload: it is a normal message with payload and a 
+    not null.
+\end{itemize}
+
+\subsection{Systematic propagation}
+It is the simplest way to communicate its time simulation progression.
+Indeed after each time jump, the node send a null message in order all the other
+node knows its current simulation time.
+
+This method is also the quicker way to inform the other node about our progress.
+
+\subsection{demand-driven propagation}
+When a node can not make a time progress because it has not enough information
+about the other nodes, it send a time request. When
+a node receives a time request, it answers with a null message.\\
+
+Some optimisations are done in order to avoid to send a lot of unnecessary 
+null message and time request.
+
+When a node send a time request, it informs also the other nodes about its
+current simulation time like a null message.
+A node which has already send a message (null message, request, normal, ...) 
+at simulation time $t$ does not send a null message if it receives a time 
+request and is still at time $t$.
+A node send only one time request for a given simulation time.\\
+
+This politic can slow down the simulation but can not created deadlock.
+Indeed if there is some simulation time progress of one node that we do not know,
+we will know it with a time request or because it send a message.\\
+
+A tricky case can occur when: we are node $n$ at simulation time $t$ and
+we send a time request because we can not make a time progress because the other
+nodes are late compare to us. But all the other nodes have already send a message
+at their current simulation time so they do not answer to the time request
+(and even if they do, it does not give information to node $n$ that it has not already).
+So node $n$ can not simulate further for the moment.
+
+The other nodes makes progress but does not send messages. So node $n$ is still blocked.
+But at some point, the other nodes will be blocked because node $n$ is not enough far in
+the simulation and they send a time request. At this point node $n$ knows the time the
+other nodes and that it can not receive a message before $t'$ with $t'>t$. So it can 
+continue its simulation.

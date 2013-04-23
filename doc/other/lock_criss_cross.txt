@@ -1,0 +1,41 @@
+There is 2 kind of locks: le lock for the nodes and the lock for the listener.
+The measure of one type can not interact with the measure of the other type.
+
+NODE:
+    LOCK_NODE_SEND_QUEUE    (in xsim_node_send)
+        -> LOCK_NODE_MSG_BOX_COND  (in xsim_node_send) 
+
+    LOCK_NODE_MSG_BOX_COND  (in xsim_node_free)
+
+    LOCK_NODE_RECV_QUEUE    (in xsim_node_recv)
+
+    LOCK_NODE_RECV_QUEUE    (in xsim_compute_next_time)
+
+LISTENER
+    LOCK_LISTENER_SEND_QUEUE    (in xsim_node_listener_post_msg)
+        -> LOCK_LISTENER_MSG_EMPTY      (in xsim_msg_list_pop from xsim_msg_box_get_empty)
+        -> LOCK_LISTENER_MSG_QUEUE      (in xsim_msg_box_add_queue)
+        -> LOCK_LISTENER_MSG_BOX_COND   (in xsim_node_listener_post_msg)
+            -> UNLOCK_LISTENER_SEND_QUEUE
+
+    LOCK_LISTENER_MSG_QUEUE     (in xsim_node_listener_read_msg)
+        -> LOCK_LISTENER_RECV_QUEUE     (in xsim_node_incoming_msg)
+        -> LOCK_LISTENER_RECV_QUEUE     (in xsim_time_update)   *3
+
+    LOCK_LISTENER_MSG_QUEUE     (in xsim_listener_free_msg)
+        -> LOCK_LISTENER_MSG_EMPTY      (in xsim_msg_list_push from xsim_msg_box_put_empty)
+                                        (in xsim_msg_box_init and xsim_perf_benchmark but does not matter in our case)
+
+    LOCK_LISTENER_SEND_QUEUE    (in xsim_node_listener)
+        -> LOCK_LISTENER_MSG_BOX_COND   (in xsim_node_listener)
+            -> UNLOCK_LISTENER_SEND_QUEUE   (in xsim_node_listener)
+
+
+For the node, we can do 2 groups for the measures:
+    -> LOCK_NODE_SEND_QUEUE
+    -> LOCK_NODE_MSG_BOX_COND, LOCK_NODE_RECV_QUEUE
+
+For the listener, we can do 3 groups for the measures:
+    -> LOCK_LISTENER_SEND_QUEUE, LOCK_LISTENER_RECV_QUEUE
+    -> LOCK_LISTENER_MSG_QUEUE, LOCK_LISTENER_MSG_BOX_COND 
+    -> LOCK_LISTENER_MSG_EMPTY

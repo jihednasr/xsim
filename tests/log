@@ -1,0 +1,367 @@
+*********************************************
+**** experience with Window et time info freq
+*********************************************
+
+/bin/bash: warning: setlocale: LC_ALL: cannot change locale (fr_FR.UTF-8)
+#define   time_window               100
+#define TIME_PERIOD          100
+            if ((last_time_broadcast + TIME_PERIOD >= node->current_time) || (last_time_broadcast == 0)) {
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 1/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 19934471
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 2/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16102589
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 3/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16370030
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 4/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14508597
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 5/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13049586
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 6/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15207520
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 7/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15453424
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 8/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16302289
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 9/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15746574
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 10/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 12881876
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 11/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13439231
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 12/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14941617
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 13/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16320364
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 14/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15196156
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 15/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 19999953
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 16/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14512597
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 17/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15489733
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 18/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15440914
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 19/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 995205543
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 20/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16153334
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 21/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14992765
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 22/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16077747
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 23/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15307571
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 24/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16599289
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 25/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 11459314
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 26/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15405892
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 27/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13719562
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 28/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15493529
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 29/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 17103447
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 30/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16360543
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 31/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 17765465
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 32/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16932394
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 33/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16632656
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 34/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13045236
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 35/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15724321
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 36/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14101342
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 37/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13056391
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 38/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15066734
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 39/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 991598955
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 40/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13176428
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 41/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 18738081
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 42/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 10783785
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 43/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15006761
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 44/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 12964046
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 45/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14157944
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 46/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15191401
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 47/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14801874
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 48/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16634425
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 49/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 17958016
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 50/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14518775
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 51/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14947746
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 52/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14375771
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 53/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15788517
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 54/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16649662
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 55/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16178782
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 56/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16841300
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 57/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16115269
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 58/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14990590
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 59/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 989785989
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 60/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13515086
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 61/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 17177309
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 62/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16423137
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 63/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13543632
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 64/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15290609
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 65/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15609588
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 66/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14872032
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 67/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16295919
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 68/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16282699
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 69/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 17107696
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 70/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13825977
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 71/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15927535
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 72/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13768273
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 73/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14651779
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 74/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15732086
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 75/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14283779
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 76/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14705513
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 77/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 13612132
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 78/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16838562
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 79/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15457546
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 80/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16657996
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 81/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15183978
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 82/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15298012
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 83/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16379475
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 84/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 12361461
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 85/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 16783924
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 86/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15548299
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 87/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 14645000
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 88/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15003527
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 89/200 trial !!!!!!!!!
+Got all my childs
+Xsim_result: 15922130
+
+!!!!!!!!! 4 number of node ; 1 number of interface ; 90/200 trial !!!!!!!!!
+Got all my childs

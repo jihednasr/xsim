@@ -1,0 +1,45 @@
+Each resource (without NIC) simulates localy regardless to the others resources.
+Only the NIC are "connected" to the others resources.
+
+Without notion of global simulation time but only local simulation time, 
+the different nodes simulates locally what they have to simulate, they send a message 
+when they need it and receive a message when a message comes without synchronization
+with the others nodes. So a basic NIC can be:
+\begin{verbatim}
+while not(end_of_simulation) {
+    if there_is_a_message_to_send() {
+        xsim_msg_send(&message);
+    }
+    if there_is_a_message_to_receive() {
+        xsim_msg_recv(&message);
+        handle_msg(&message);
+    }
+    update_its_time_in_order_to_stay_synchrone_with_its_resource();
+}
+\end{verbatim}
+
+
+As we will see later, when the time management is added, a part of the NIC
+simulation is made in Xsim. Moreover for each NIC, there is a FIFO which represents
+all the messages it has to send. The simulation loop is:
+\begin{verbatim}
+while not(end_of_simulation) {
+    simulate_the_components();
+    forall NIC:i {
+        simulate_the_NIC_send(to_send[i]);
+        simulate_the_NIC_recv();
+    }
+}
+\end{verbatim}
+
+
+The user has to implement the simulation of the components of the resource.
+For the NIC, the communication with the other components of the resource and 
+the internal functioning must be also implemented. The communication with the
+other nodes is done by Xsim.
+In other words, once a message is put in \verb|to_send| list, it is sent as 
+soon as possible and Xsim handles this
+message until it arrives to its destination at the right simulation time.
+
+
+

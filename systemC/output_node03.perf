@@ -1,0 +1,90 @@
+node n°03:
+==========
+
+********************************************************************************
+- benchmark:
+
+Total time spent in this part:		                2024	cycles
+Number of time this part is used:	                  10
+Mean time spent in this part:		                 202	cycles
+
+********************************************************************************
+- msg_src_sh_benchmark:
+
+Total time spent in this part:		               99444	cycles
+Number of time this part is used:	                  10
+Mean time spent in this part:		                9944	cycles
+
+********************************************************************************
+- msg_sh_src_benchmark:
+
+Total time spent in this part:		               31836	cycles
+Number of time this part is used:	                  10
+Mean time spent in this part:		                3183	cycles
+
+********************************************************************************
+- copy_src_sh_benchmark:
+
+Total time spent in this part:		                5624	cycles
+Number of time this part is used:	                  10
+Mean time spent in this part:		                 562	cycles
+
+********************************************************************************
+- copy_sh_src_benchmark:
+
+Total time spent in this part:		                3756	cycles
+Number of time this part is used:	                  10
+Mean time spent in this part:		                 375	cycles
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+- global_benchmark:
+
+Total time spent in this part:		    0s     3397ns	cycles
+Number of time this part is used:	               10
+Mean time spent in this part:		    0s      339ns	cycles
+
+********************************************************************************
+- global_processus_time:
+
+Total time spent in this part:		    0s110158292ns	cycles
+Number of time this part is used:	                1
+Mean time spent in this part:		    0s110158292ns	cycles
+
+********************************************************************************
+- global_simulation_time:
+
+Total time spent in this part:		    0s 91079502ns	cycles
+Number of time this part is used:	                1
+Mean time spent in this part:		    0s 91079502ns	cycles
+
+********************************************************************************
+- global_listener_time:
+
+Total time spent in this part:		    0s  4379648ns	cycles
+Number of time this part is used:	                1
+Mean time spent in this part:		    0s  4379648ns	cycles
+
+********************************************************************************
+********************************************************************************
+********************************************************************************
+
+Number of messages with a payload sent: 25 
+Number of null messages sent: 20 
+Number of messages sent which ask for time information: 0 
+Number of messages sent to indicate the end of the simulation: 2 
